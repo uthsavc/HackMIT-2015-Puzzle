@@ -1,6 +1,9 @@
 #if you like waiting 20 minutes for puzzle solutions then i've got the thing for you!
 
 from itertools import product
+import time
+
+start = time.time()
 
 # alphabetic characters
 avail = []
@@ -42,11 +45,9 @@ def bash(l):
     for attempt in product(avail, repeat=l):
         w = ''.join(attempt)
         if ck(w) == 0xd06e:
-            #print("hey!")
             left.append(w)
             test_right(right, w)
         if ck(w) == 0xf00d:
-            #print("hey!")
             right.append(w)
             test_left(left, w)
 
