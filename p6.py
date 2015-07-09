@@ -1,4 +1,4 @@
-#if you like waiting 20 minutes for puzzle solutions, well i've got the thing for you!
+#if you like waiting 20 minutes for puzzle solutions then i've got the thing for you!
 
 from itertools import product
 

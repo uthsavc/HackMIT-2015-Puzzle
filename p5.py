@@ -41,8 +41,6 @@ def explore(url):
             to_return.append((href,-1))
     return to_return
 
-
-
 #initialize
 to_return = explore(init)
 for i in to_return:
@@ -50,7 +48,7 @@ for i in to_return:
     c = i[1]
     q.put((h,c))
 
-
+#begin the DFS search
 while len(urls) < 9:
     h, c = q.get()
 
